@@ -61,6 +61,22 @@ public class ArrayQueue<E> implements Queue<E> {
 		elements = t;
 		first = 0;
 	}
+	
+	//JUST FOR TESTING
+	@Override
+	public void showReverse() { 
+		if (size == 0)				  
+			System.out.println("Queue is empty."); 
+		else
+			recSR(first);
+		} 
+		
+	private void recSR(int f) { 
+		if (elements[f] != null) { 
+			recSR(f+1); 
+			System.out.println(elements[f]); 
+		} 
+	} 
 }
 
 

@@ -32,4 +32,7 @@ public interface Queue<E> {
 		the queue. Returns null if the queue is empty.  
 	**/
 	E dequeue();
+	
+	//just for testing
+	void showReverse();
 }

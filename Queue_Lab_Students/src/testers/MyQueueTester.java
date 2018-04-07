@@ -3,7 +3,7 @@ package testers;
 import classes.ArrayQueue;
 import classes.SLLQueue;
 
-public class QueueTester {
+public class MyQueueTester {
 	
 	public static void main(String[] args) {
 		SLLQueue<Integer> q = new SLLQueue<>();

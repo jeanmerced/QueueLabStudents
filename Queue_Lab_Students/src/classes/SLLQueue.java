@@ -87,5 +87,21 @@ public class SLLQueue<E> implements Queue<E> {
 		}
 		size++; 
 	}
+	
+	//JUST FOR TESTING
+	@Override
+	public void showReverse() { 
+		if (size == 0)
+			System.out.println("Queue is empty."); 
+		else
+			recSR(first);
+	} 
+	
+	private void recSR(Node<E> f) { 
+		if (f != null) { 
+			recSR(f.getNext()); 
+			System.out.println(f.getElement()); 
+		} 
+	} 
 }
 
